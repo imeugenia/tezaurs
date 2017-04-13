@@ -1,0 +1,236 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+     <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Tezaurs</title>
+        <meta name="description" content="Skaidrojošā un sinonīmu vārdnīca">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="favicons/manifest.json">
+        <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#4056f4">
+
+        <meta property="og:title" content="Skaidrojošā un sinonīmu vārdnīca"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="http://tezaurs.lv/"/> 
+        <meta property="og:image" content="/screenshot.png"/> 
+
+        <meta name="theme-color" content="#4056f4">
+        <meta name="msapplication-navbutton-color" content="#4056f4">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#4056f4">
+        
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Eczar:500|Open+Sans:300,300i,400,400i&amp;subset=latin-ext" rel="stylesheet">  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <style>
+            #submit {
+                background: url('img/search.png') no-repeat center;
+                background-size: 1.2rem;
+            }
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="container full-with-footer">
+            <header class="outer-wrapper">
+                <div class="logo-container">
+                    <a href="index.html">
+                        <img class="logo" src="img/logo.png"/>
+                    </a>
+                </div>
+                <div class="wrapper">
+                    <div class="form-container">
+
+                        <form action="#" method="post">
+                            <div class="input-container">
+                                 <input type="text" name="search" value="" id="search-field" placeholder="Meklēt skaidrojumu">   
+                                <button type="submit" name="submit" value="" id="submit"> </button>
+                            </div>
+                        </form>
+                        
+                        <div class="characters-container">
+                            <input type="checkbox" id="show-characters" class="show-characters" />
+                            <label for="show-characters" id="show-label">
+                                <img id="show-characters-button" src="img/characters_icon.png"/>
+                            </label>
+                            <label for="show-characters" id="hide-label">
+                                <img id="hide-characters-button"src="img/characters/close.png"/>
+                            </label>
+                            <div id="characters">
+                                <ul>
+                                    <li class="character" onclick="addText(this)">
+                                        <img src="img/characters/aa.png"/>
+                                    </li>
+                                    <li class="character" onclick="addText(this)">
+                                        <img src="img/characters/ch.png"/>
+                                    </li>
+                                    <li class="character" onclick="addText(this)">
+                                        <img src="img/characters/ee.png"/>
+                                    </li>
+                                    <li class="character" onclick="addText(this)">
+                                        <img src="img/characters/gj.png"/>
+                                    </li>
+                                    <li class="character" onclick="addText(this)">
+                                        <img src="img/characters/kj.png"/>
+                                    </li>
+                                    <li class="character" onclick="addText(this)">
+                                        <img src="img/characters/lj.png"/>
+                                    </li>
+                                    <li class="character" onclick="addText(this)">
+                                        <img src="img/characters/nj.png"/>
+                                    </li>
+                                    <li class="character" onclick="addText(this)">
+                                        <img src="img/characters/sh.png"/>
+                                    </li>
+                                    <li class="character" onclick="addText(this)">
+                                        <img src="img/characters/uu.png"/>
+                                    </li>
+                                    <li class="character" onclick="addText(this)">
+                                        <img src="img/characters/zh.png"/>
+                                    </li>
+                                </ul>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </header>
+            <div class="wrapper">
+                <div class="info-container">
+                    <h1>Izmantotie avoti</h1>
+                    <p>Tēzaura sastādīšanā ir izmantoti vairāk nekā 290 avoti. Primārais avots, LLVV, ir izmantots 25% šķirkļu, bet katrs sekundārais avots ir izmantots vismaz 1% šķirkļu. Perifērie avoti ir izmantoti mazāk nekā 1% šķirkļu.</p>
+                    <div class="top-distance-xl definition">
+                        <div>
+                            <a href="avots-prim.html">
+                                <h3 class="top-distance-s">Primārais avots</h3> 
+                                <img class="arrow" src="img/arrow.png">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="avoti-sek.html">
+                                <h3 class="top-distance-s">Sekundārie avoti</h3>
+                                <img class="arrow" src="img/arrow.png">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="avoti-per.html">
+                                <h3 class="top-distance-s">Perifērie avoti</h3>
+                                <img class="arrow" src="img/arrow.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer-container">
+            <footer>
+            <div >
+               <div class="footer-nav">
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="kitezaurs.html">
+                                    Kas ir tēzaurs
+                                </a>
+                            </li>
+                            <li>
+                                <a href="avoti.html">
+                                    Izmantotie avoti
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="citasvardnicas.html">
+                                    Citas vārdnīcas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:tezaurs@ailab.lv">
+                                    Kontakti
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Statistika
+                            </li>
+                            
+                            <li>
+                                <a target="_blank" href="https://github.com/LUMII-AILab/Tezaurs">
+                                    Atvērtie dati 
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>Tēzaura API
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <ul>
+                        <li>Seko mums
+                        </li>
+                        <li> 
+                            <a target="_blank" href="https://twitter.com/AILab_lv">
+                                <img src="img/social_media/twitter.png"/>
+                            </a>
+                        </li>
+                        <li>
+                            <img src="img/social_media/fb.png"/>
+                        </li>
+                    </ul>
+               </div>
+            
+               <div class="footer-bottom">
+                    <div class="copyright">
+                        <span>
+                            Vārdnīcu sastādījis Andrejs Spektors<br>
+                            Mākslīgā intelekta laboratorija, 2009–2017
+                        </span>
+
+                    </div>
+                    <div class="partner-logo">
+                        <a target="_blank" href="http://ailab.lv/">
+                            <img id="first-partner" src="img/logo/1.png"/>
+                        </a>
+                        <a target="_blank" href="http://lumii.lv/">
+                            <img src="img/logo/2.png"/>
+                        </a>
+                        <a target="_blank" href="http://lu.lv/">
+                            <img src="img/logo/3.png"/>
+                        </a>
+                    </div>
+                    
+               </div>
+               <br style="clear: both;" /> 
+            </div>
+            </footer>
+        </div>
+
+        <div id="reading-shadow">
+        </div>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/main.js" async></script>
+    </body>
+</html>

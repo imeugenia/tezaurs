@@ -1,0 +1,430 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+     <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Tezaurs</title>
+        <meta name="description" content="Skaidrojošā un sinonīmu vārdnīca">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="favicons/manifest.json">
+        <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#4056f4">
+
+        <meta property="og:title" content="Skaidrojošā un sinonīmu vārdnīca"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="http://tezaurs.lv/"/> 
+        <meta property="og:image" content="/screenshot.png"/> 
+
+        <meta name="theme-color" content="#4056f4">
+        <meta name="msapplication-navbutton-color" content="#4056f4">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#4056f4">
+        
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Eczar:500|Open+Sans:300,300i,400,400i&amp;subset=latin-ext" rel="stylesheet"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <style>
+            #submit {
+                background: url('img/search.png') no-repeat center;
+                background-size: 1.2rem;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="header-container">
+            <header class="outer-wrapper">
+                <div class="logo-container">
+                    <a href="index.html">
+                        <img class="logo" src="img/logo.png"/>
+                    </a>
+                </div>
+                <div class="wrapper">
+                    <div class="form-container">
+
+                        <form action="#" method="post">
+                            <div class="input-container">
+                                 <input type="text" name="search" value="" id="search-field" placeholder="Meklēt skaidrojumu">   
+                                <button type="submit" name="submit" value="" id="submit"> </button>
+                            </div>
+                        </form>
+                        
+                        <div class="characters-container">
+                            <input type="checkbox" id="show-characters" class="show-characters" />
+                            <label for="show-characters" id="show-label">
+                                <img id="show-characters-button" src="img/characters_icon.png"/>
+                            </label>
+                            <label for="show-characters" id="hide-label">
+                                <img id="hide-characters-button"src="img/characters/close.png"/>
+                            </label>
+                            <div id="characters">
+                                <ul>
+                                    <li class="character" onclick="addText(this)">
+                                        <img src="img/characters/aa.png"/>
+                                    </li>
+                                    <li class="character" onclick="addText(this)">
+                                        <img src="img/characters/ch.png"/>
+                                    </li>
+                                    <li class="character" onclick="addText(this)">
+                                        <img src="img/characters/ee.png"/>
+                                    </li>
+                                    <li class="character" onclick="addText(this)">
+                                        <img src="img/characters/gj.png"/>
+                                    </li>
+                                    <li class="character" onclick="addText(this)">
+                                        <img src="img/characters/kj.png"/>
+                                    </li>
+                                    <li class="character" onclick="addText(this)">
+                                        <img src="img/characters/lj.png"/>
+                                    </li>
+                                    <li class="character" onclick="addText(this)">
+                                        <img src="img/characters/nj.png"/>
+                                    </li>
+                                    <li class="character" onclick="addText(this)">
+                                        <img src="img/characters/sh.png"/>
+                                    </li>
+                                    <li class="character" onclick="addText(this)">
+                                        <img src="img/characters/uu.png"/>
+                                    </li>
+                                    <li class="character" onclick="addText(this)">
+                                        <img src="img/characters/zh.png"/>
+                                    </li>
+                                </ul>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="search-head">
+                        <h3 class="no-margin">Sekundārie avoti</h3>
+                        <a href="avoti.html">
+                            <p><img class="arrow" src="img/arrow_left.png">atpakaļ</p>
+                        </a>
+                    </div>
+                    
+                </div>
+                
+            </header>
+        </div>
+
+        <div id="main-container">
+            <div class="outer-wrapper">
+                <div class="wrapper main">
+                    <ul class="source-list">
+                        <li>
+                            <div class="source-name">
+                                Aug2
+                            </div>
+                            <div class="source-full-name">
+                                <span >Ēdelmane I., Ozola Ā. Latviešu valodas augu nosaukumi. Rīga, SIA «Augsburgas institūts», 2003.
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="source-name">
+                                EH
+                            </div>
+                            <div class="source-full-name">
+                                <span >Endzelīns J., Hauzenberga E. Papildinājumi un labojumi K. Mīlenbaha Latviešu valodas vārdnīcai. Rīga, Kultūras fonds; VAPP, 1934.–1946.
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="source-name">
+                                ĒiV
+                            </div>
+                            <div class="source-full-name">
+                                <span>Kagaine E., Raģe S. Ērģemes izloksnes vārdnīca. 1.–3. Rīga, Zinātne, 1977.–1983.
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="source-name">
+                                KiV
+                            </div>
+                            <div class="source-full-name">
+                                <span>Reķēna A. Kalupes izloksnes vārdnīca. 1.–2. Rīga, LU LVI, 1998.
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="source-name">
+                                KV
+                            </div>
+                            <div class="source-full-name">
+                                <span>Latviešu Konversācijas vārdnīca. 1.–21. Rīga, A. Gulbja apgāds, 1927.–1940.; papildināts faksimilizdevums 1.–22. Rīga, 2000.–2004.
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="source-name">
+                                LC
+                            </div>
+                            <div class="source-full-name">
+                                <span>Latvijas ciemi. Nosaukumi, ģeogrāfiskais izvietojums. Rīga, Latvijas Ģeotelpiskās informācijas aģentūra, 2007.
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="source-name">
+                                LD
+                            </div>
+                            <div class="source-full-name">
+                                <span>Latvijas daba. Enciklopēdija. 1.–6. Rīga, 1994.–1998.
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="source-name">
+                                LE1
+                            </div>
+                            <div class="source-full-name">
+                                <span>Latvijas Enciklopēdija. 1.–5. Rīga, Valērija Belokoņa izdevniecība, 2002.–2009.
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="source-name">
+                                LME
+                            </div>
+                            <div class="source-full-name">
+                                <span>Latvju mazā enciklopēdija. Rīga, Grāmatu Draugs, 1935.
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="source-name">
+                                LpA 
+                            </div>
+                            <div class="source-full-name">
+                                <span>  Lielais pasaules atlants. Rīga, Karšu izdevniecība Jāņa sēta, 2008.
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="source-name">
+                                ME
+                            </div>
+                            <div class="source-full-name">
+                                <span>Mīlenbahs K. Latviešu valodas vārdnīca. Rediģējis, papildinājis, turpinājis J. Endzelīns. Rīga, Kultūras fonds, 1923.–1932.
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="source-name">
+                                MSV
+                            </div>
+                            <div class="source-full-name">
+                                <span>Medicīnas svešvārdu vārdnīca. Rīga, Avots, 2007.
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="source-name">
+                                PuA
+                            </div>
+                            <div class="source-full-name">
+                                <span>Pasaules uzziņu atlants. Rīga, Karšu izdevniecība Jāņa sēta, 2010.
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="source-name">
+                                Sin
+                            </div>
+                            <div class="source-full-name">
+                                <span>Grīnberga E., Kalnciems O., Lukstiņš G., Ozols J. Latviešu valodas sinonīmu vārdnīca. 2. izd. Rīga, Liesma, 1972.; 3. izd. Rīga, Avots, 2002.
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="source-name">
+                                SLG
+                            </div>
+                            <div class="source-full-name">
+                                <span>Bušs O., Ernstsone V. Latviešu valodas slenga vārdnīca. Rīga, Norden AB, 2006.
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="source-name">
+                                SV99
+                            </div>
+                            <div class="source-full-name">
+                                <span>Svešvārdu vārdnīca. Rīga, Jumava, 1999.; 3. izdevums, Rīga, Jumava, 2007.
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="source-name">
+                                LE1
+                            </div>
+                            <div class="source-full-name">
+                                <span>Latvijas Enciklopēdija. 1.–5. Rīga, Valērija Belokoņa izdevniecība, 2002.–2009.
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="source-name">
+                                TM
+                            </div>
+                            <div class="source-full-name">
+                                <span>Rudzītis K. Terminologia medica. Rīga, 1973.
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="source-name">
+                                TM5
+                            </div>
+                            <div class="source-full-name">
+                                <span>  Rudzītis K. Terminologia medica. Latīņu-latviešu medicīnas terminu vārdnīca. 2003.–2005. gada pārstrādāts un papildināts izdevums. Rīga, 2005.
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="source-name">
+                                V1
+                            </div>
+                            <div class="source-full-name">
+                                <span>Dambe V. Latvijas apdzīvoto vietu un to iedzīvotāju nosaukumi. Rīga, Zinātne, 1990.
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="source-name">
+                                ViV
+                            </div>
+                            <div class="source-full-name">
+                                <span>Ādamsons E., Kagaine E. Vainižu izloksnes vārdnīca. A–M, N–Ž. Rīga, LU LVI, 2000.
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="source-name">
+                                Wi
+                            </div>
+                            <div class="source-full-name">
+                                <span>Vikipēdija un citi interneta resursi
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="source-name">
+                                ZTV
+                            </div>
+                            <div class="source-full-name">
+                                <span>Zinātnes un tehnoloģijas vārdnīca. Rīga, Norden AB, 2001.
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+        </div> 
+
+        <div id="footer-container">
+            <footer>
+            <div >
+               <div class="footer-nav">
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="kitezaurs.html">
+                                    Kas ir tēzaurs
+                                </a>
+                            </li>
+                            <li>
+                                <a href="avoti.html">
+                                    Izmantotie avoti
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="citasvardnicas.html">
+                                    Citas vārdnīcas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:tezaurs@ailab.lv">
+                                    Kontakti
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Statistika
+                            </li>
+                            
+                            <li>
+                                <a target="_blank" href="https://github.com/LUMII-AILab/Tezaurs">
+                                    Atvērtie dati 
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>Tēzaura API
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <ul>
+                        <li>Seko mums
+                        </li>
+                        <li> 
+                            <a target="_blank" href="https://twitter.com/AILab_lv">
+                                <img src="img/social_media/twitter.png"/>
+                            </a>
+                        </li>
+                        <li>
+                            <img src="img/social_media/fb.png"/>
+                        </li>
+                    </ul>
+               </div>
+            
+               <div class="footer-bottom">
+                    <div class="copyright">
+                        <span>
+                            Vārdnīcu sastādījis Andrejs Spektors<br>
+                            Mākslīgā intelekta laboratorija, 2009–2017
+                        </span>
+
+                    </div>
+                    <div class="partner-logo">
+                        <a target="_blank" href="http://ailab.lv/">
+                            <img id="first-partner" src="img/logo/1.png"/>
+                        </a>
+                        <a target="_blank" href="http://lumii.lv/">
+                            <img src="img/logo/2.png"/>
+                        </a>
+                        <a target="_blank" href="http://lu.lv/">
+                            <img src="img/logo/3.png"/>
+                        </a>
+                    </div>
+                    
+               </div>
+               <br style="clear: both;" /> 
+            </div>
+            </footer>
+        </div>
+
+        <div id="reading-shadow">
+        </div>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/main.js" async></script>
+    </body>
+</html>
